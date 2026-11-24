@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>STUDENT EXPENSE TRACKER</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <style>
+        body {
+            font-family: Arial;
+            background-color: rgb(219, 255, 254);
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgb(6, 217, 221);
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, select, button {
+            padding: 10px;
+            margin: 8px;
+        }
+
+        button {
+            background-color: rgb(253, 3, 3);
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    
+    <div class="container">
+
+        <h1>Student Expense Tracker</h1>
+
+        <input type="text" id="name" placeholder="Expense Name">
+
+        <input type="number" id="amount" placeholder="Enter Amount">
+        <br>
+
+        <select id="category">
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Shopping</option>
+            <option>Education</option>
+            <option>Other</option>
+        </select>
+        <br>
+        <button onclick="addExpense()">Add Expense</button>
+        <h3>My Expenses</h3>
+
+        <ul id="list"></ul>
+
+        <h4>Total: ₹<span id="total">700</span></h4>
+        <h4>Food 200 rs</h4>
+        <h4>Travel 500 rs</h4>
+
+    </div>
+</body>
+
+</html>
